@@ -10,6 +10,8 @@ import "./database";
 
 import "./shared/container";
 
+import "./shared/container/providers";
+
 const app = express();
 
 app.use(express.json());
