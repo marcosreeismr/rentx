@@ -3,8 +3,8 @@ import { sign } from "jsonwebtoken";
 import { inject, injectable } from "tsyringe";
 
 import auth from "../../../../config/auth";
-import { AppError } from "../../../../erros/AppError";
 import { IDateProvider } from "../../../../shared/container/providers/DateProvider/IDateProvider";
+import { AppError } from "../../../../shared/erros/AppError";
 import { IUsersRepository } from "../../repositories/IUsersRepository";
 import { IUsersTokensRepositoty } from "../../repositories/IUsersTokensRepository";
 
