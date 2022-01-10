@@ -4,13 +4,14 @@ import swaggerUi from "swagger-ui-express";
 
 import swaggerFile from "../../../swagger.json";
 import { AppError } from "../../erros/AppError";
-import "../typeorm";
+import createConnection from "../typeorm";
 import { router } from "./routes";
 
 import "../../container";
 
 import "../../container/providers";
 
+createConnection();
 const app = express();
 
 app.use(express.json());
